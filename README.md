@@ -1,1 +1,1 @@
-# FoldModelling-Plugin
+# FoldOptLib - Fold Geometry Optimisation Library
