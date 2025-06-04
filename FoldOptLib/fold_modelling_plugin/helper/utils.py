@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from ..from_loopstructural._svariogram import SVariogram
+from ...from_loopstructural._svariogram import SVariogram
 import mplstereonet
 import dill
 
@@ -18,12 +18,10 @@ def calculate_semivariogram(fold_frame, fold_rotation, lag=None, nlag=None):
 
 
 def get_predicted_rotation_angle(theta, fold_frame_coordinate):
-    # y_pred = np.tan(np.deg2rad(fourier_series(
-    #     fold_frame_coordinate, *theta)))
-    y_pred = fourier_series(
-        fold_frame_coordinate, *theta)
-
-    return y_pred
+    """Evaluate the fold rotation angle prediction."""
+    coord = np.asarray(fold_frame_coordinate, dtype=float)
+    y_pred = fourier_series(coord, *theta)
+    return np.asarray(y_pred)
 
 
 def fourier_series(x, c0, c1, c2, w):
@@ -319,6 +317,11 @@ def create_dataset(vec: np.ndarray, points: np.ndarray, name: str = 's0', coord:
     dataset['coord'] = coord
 
     return dataset
+
+
+def make_dataset(vec: np.ndarray, points: np.ndarray, name: str = 's0', coord: int = 0) -> pd.DataFrame:
+    """Backwards compatible wrapper around :func:`create_dataset`."""
+    return create_dataset(vec, points, name=name, coord=coord)
 
 
 def get_wavelength_guesses(guess, size):
