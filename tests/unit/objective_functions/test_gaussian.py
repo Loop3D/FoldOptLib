@@ -1,7 +1,11 @@
 import unittest
 import numpy as np
-from FoldOptLib.fold_modelling_plugin.objective_functions import (gaussian_log_likelihood, loglikelihood,
-                                                                  loglikelihood_axial_surface, loglikelihood_fourier_series)
+from FoldOptLib.objective_functions import (
+    gaussian_log_likelihood,
+    loglikelihood,
+    loglikelihood_axial_surface,
+    loglikelihood_fourier_series,
+)
 
 # class TestYourFunctions(unittest.TestCase):
 #

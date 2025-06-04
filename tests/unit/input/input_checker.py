@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import numpy as np
 # import CheckInputData
-from FoldOptLib.fold_modelling_plugin.input.input_data_checker import CheckInputData
+from FoldOptLib.input.input_data_checker import CheckInputData
 
 
 # class TestCheckInputData(unittest.TestCase):

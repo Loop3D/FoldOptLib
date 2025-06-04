@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from FoldOptLib.fold_modelling_plugin.objective_functions.axial_plane import is_axial_plane_compatible
+from FoldOptLib.objective_functions.axial_plane import is_axial_plane_compatible
 
 
 class TestIsAxialPlaneCompatible(unittest.TestCase):
