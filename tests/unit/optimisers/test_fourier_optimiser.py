@@ -1,8 +1,9 @@
 import unittest
 import numpy as np
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, MaxAbsScaler, normalize
-from FoldOptLib.FoldModellingPlugin.optimisers.fourier_optimiser import FourierSeriesOptimiser
-from FoldOptLib.FoldModellingPlugin.helper.utils import *
+from FoldOptLib.fold_modelling_plugin.optimisers.fourier_optimiser import (
+    FourierSeriesOptimiser,
+)
 
 
 class TestFourierSeriesOptimiser(unittest.TestCase):

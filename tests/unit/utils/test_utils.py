@@ -5,7 +5,18 @@ import pandas as pd
 import os
 
 # from FoldModellingPlugin.FoldModellingPlugin.from_loopstructural._svariogram import SVariogram
-from FoldOptLib.fold_modelling_plugin.helper.utils import *
+from FoldOptLib.fold_modelling_plugin.helper.utils import (
+    get_predicted_rotation_angle,
+    fourier_series,
+    fourier_series_x_intercepts,
+    save_load_object,
+    strike_dip_to_vectors,
+    strike_dip_to_vector,
+    rotate_vector,
+    create_dict,
+    create_gradient_dict,
+    make_dataset,
+)
 
 
 class TestGeologicalFunctions(unittest.TestCase):

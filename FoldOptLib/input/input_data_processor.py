@@ -2,8 +2,7 @@ import pandas as pd
 from typing import List, Optional, Dict
 import numpy as np
 from .input_data_checker import CheckInputData
-from ..helper._helper import *
-from ..helper.utils import *
+from ..helper.utils import strike_dip_to_vectors
 
 
 def _normalise_gradient(gradient: np.ndarray) -> np.ndarray:

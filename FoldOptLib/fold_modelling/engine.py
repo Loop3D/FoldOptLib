@@ -2,8 +2,12 @@ from typing import Union, Dict, Any, List, Optional
 import numpy as np
 import pandas as pd
 from LoopStructural import GeologicalModel
-from ..helper._helper import *
-from ..helper.utils import *
+from ..helper.utils import (
+    fourier_series,
+    create_dataset,
+    rotate_vector,
+    calculate_intersection_lineation,
+)
 # from
 from ..input.input_data_processor import InputDataProcessor
 from ..from_loopstructural._fold import FoldEvent
