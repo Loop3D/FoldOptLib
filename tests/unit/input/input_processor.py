@@ -1,8 +1,8 @@
 import unittest
 import pandas as pd
 import numpy as np
-from FoldOptLib.fold_modelling_plugin.helper.utils import *
-from FoldOptLib.fold_modelling_plugin.input.input_data_processor import InputDataProcessor
+from FoldOptLib.helper.utils import *
+from FoldOptLib.input.input_data_processor import InputDataProcessor
 
 
 class TestInputDataProcessor(unittest.TestCase):

@@ -1,8 +1,8 @@
 import unittest
 import numpy as np
 from LoopStructural.modelling.features.fold import fourier_series
-from FoldOptLib.fold_modelling_plugin.splot.splot_processor import SPlotProcessor
-from FoldOptLib.fold_modelling_plugin.helper.utils import fourier_series_x_intercepts
+from FoldOptLib.splot.splot_processor import SPlotProcessor
+from FoldOptLib.helper.utils import fourier_series_x_intercepts
 
 
 class TestSPlotProcessor(unittest.TestCase):

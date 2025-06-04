@@ -2,8 +2,9 @@ import unittest
 import numpy as np
 
 # Import the class to be tested
-from FoldOptLib.fold_modelling_plugin.objective_functions.geological_knowledge import \
-    GeologicalKnowledgeFunctions
+from FoldOptLib.objective_functions.geological_knowledge import (
+    GeologicalKnowledgeFunctions,
+)
 
 
 class TestGeologicalKnowledgeFunctions(unittest.TestCase):

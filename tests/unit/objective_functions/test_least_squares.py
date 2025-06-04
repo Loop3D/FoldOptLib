@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 
-from FoldOptLib.fold_modelling_plugin.objective_functions.least_squares import LeastSquaresFunctions
+from FoldOptLib.objective_functions.least_squares import LeastSquaresFunctions
 
 
 class TestLeastSquaresFunctions(unittest.TestCase):
