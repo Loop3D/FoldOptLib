@@ -154,7 +154,7 @@ class FoldFrame(StructuralFrame):
         """
         points = np.vstack(points)
         s1g = self.features[0].evaluate_gradient(points)
-        s1g /= np.linalg.norm(points, axis=1)[:, None]
+        s1g /= np.linalg.norm(s1g, axis=1)[:, None]
         gradient /= np.linalg.norm(gradient, axis=1)[:, None]
         l1 = np.cross(s1g, gradient)
         l1 /= np.linalg.norm(l1, axis=1)[:, None]
