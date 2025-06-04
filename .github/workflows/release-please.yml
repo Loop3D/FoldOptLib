@@ -32,9 +32,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: conda-incubator/setup-miniconda@v3
-
         with:
-          python-version: ${{ matrix.python }}
+          python-version: ${{ matrix.python-version }}
       - name: Installing dependencies
         shell: bash -l {0}
         run: |
@@ -63,8 +62,8 @@ jobs:
   # if a release is created then run the deploy scripts for github.io, conda, pypi and docker
   
   conda-deploy:
-    name: Building conda package for python ${{ matrix.os }})
-    needs: ["documentation-test", "continuous-integration"]
+    name: Building conda package for python ${{ matrix.python-version }}
+    needs: ["continuous-integration"]
     runs-on: ${{matrix.os}}
     strategy:
       fail-fast: false
@@ -98,7 +97,7 @@ jobs:
           path: conda
 
   make_sdist:
-    needs: ["documentation-test", "continuous-integration"]
+    needs: ["continuous-integration"]
     name: Make SDist
     runs-on: ubuntu-latest
     steps:
