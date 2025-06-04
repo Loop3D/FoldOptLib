@@ -117,7 +117,7 @@ class CheckInputData:
         if self.bounding_box.size == 0:
             raise ValueError("bounding_box array is empty.")
         # check if the bounding box has the correct format
-        if not len(self.bounding_box[0]) == 3 and not len(self.bounding_box[1]) == 3:
+        if len(self.bounding_box[0]) != 3 or len(self.bounding_box[1]) != 3:
             raise ValueError("Bounding box must have the following format: [[minX, maxX, minY], [maxY, minZ, maxZ]]")
 
     # write a function that checks all the input data
