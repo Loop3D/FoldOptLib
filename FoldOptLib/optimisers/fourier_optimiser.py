@@ -11,7 +11,11 @@ import numpy as np
 from ..objective_functions.geological_knowledge import GeologicalKnowledgeFunctions
 from .fold_optimiser import FoldOptimiser
 from ..objective_functions.gaussian import loglikelihood_fourier_series
-from ..helper.utils import *
+from ..helper.utils import (
+    calculate_semivariogram,
+    get_wavelength_guesses,
+    objective_wrapper,
+)
 
 
 # from ..helper._helper import *

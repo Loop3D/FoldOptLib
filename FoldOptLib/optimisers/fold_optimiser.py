@@ -3,7 +3,6 @@ from typing import Optional, Dict, Any, Union, Callable, Dict, Any, Tuple
 import numpy as np
 # from ..input.input_data_checker import CheckInputData
 # from ..helper._helper import *
-from ..helper.utils import *
 # from .base_optimiser import BaseOptimiser
 from abc import ABC, abstractmethod
 from scipy.optimize import minimize, differential_evolution, NonlinearConstraint

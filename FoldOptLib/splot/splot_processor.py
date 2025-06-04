@@ -1,4 +1,4 @@
-from ..helper.utils import *
+from ..helper.utils import fourier_series_x_intercepts
 import numpy as np
 from LoopStructural.modelling.features.fold import fourier_series
 

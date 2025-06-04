@@ -4,7 +4,7 @@ import numpy as np
 import sys
 
 # sys.path.append("/FoldModellingPlugin/FoldModellingPlugin/fold_modelling")
-from FoldOptLib.FoldModellingPlugin.fold_modelling.engine import FoldModel
+from FoldOptLib.fold_modelling.engine import FoldModel
 
 
 class TestFoldModel(unittest.TestCase):

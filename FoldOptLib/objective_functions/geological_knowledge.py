@@ -2,8 +2,7 @@ import numpy as np
 from scipy.optimize import NonlinearConstraint, BFGS
 # from LoopStructural.modelling.features.fold import fourier_series
 from typing import Union, Dict, List
-from ..helper._helper import *
-from ..helper.utils import *
+
 from ..splot.splot_processor import SPlotProcessor
 from .von_mises_fisher import VonMisesFisher
 from .gaussian import gaussian_log_likelihood
